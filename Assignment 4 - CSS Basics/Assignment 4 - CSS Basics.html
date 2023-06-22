@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment 4 - CSS Basics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>	
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="top: -22px;">
+  <!-- Container wrapper -->
+  <div class="container-fluid" >
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#" style="font-size: 170%">Welcome</a>
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars text-light"></i>
+    </button>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto d-flex flex-row mt-3 mt-lg-0" style="font-size: 140%">
+        <li class="nav-item text-center mx-2 mx-lg-1">
+          <a class="nav-link" href="#!">
+            <div>
+              <i class="far fa-envelope fa-lg mb-1"></i>
+              <span class="badge rounded-pill badge-notification">11</span>
+            </div>
+            Home
+          </a>
+        </li>
+        <li class="nav-item text-center mx-2 mx-lg-1">
+          <a class="nav-link" href="#!">
+            <div>
+              <i class="far fa-envelope fa-lg mb-1"></i>
+              <span class="badge rounded-pill badge-notification bg-danger">11</span>
+            </div>
+            Link
+          </a>
+        </li>
+        <li class="nav-item text-center mx-2 mx-lg-1">
+          <a class="nav-link" href="#!">
+            <div>
+              <i class="far fa-envelope fa-lg mb-1"></i>
+              <span class="badge rounded-pill badge-notification bg-warning">11</span>
+            </div>
+            News
+          </a>
+        </li>
+        <li class="nav-item text-center mx-2 mx-lg-1">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-mdb-toggle=""
+            aria-expanded="false">
+            <div>
+              <i class="far fa-envelope fa-lg mb-1"></i>
+              <span class="badge rounded-pill badge-notification bg-primary">11</span>
+            </div>
+            Services
+          </a>
+          <!-- Dropdown menu -->
+        </li>
+      </ul>
+      <!-- Left links -->
+      <!-- Right links -->
+      <ul class="navbar-nav ms-auto d-flex flex-row mt-3 mt-lg-0" style="font-size: 140%">
+        <li class="nav-item text-center mx-2 mx-lg-1">
+          <a class="nav-link" href="#!">
+            <div>
+              <i class="fas fa-bell fa-lg mb-1"></i>
+              <span class="badge rounded-pill badge-notification bg-info">11</span>
+            </div>
+            Messages
+          </a>
+        </li>
+        <li class="nav-item text-center mx-2 mx-lg-1">
+          <a class="nav-link" href="#!">
+            <div>
+              <i class="fas fa-globe-americas fa-lg mb-1"></i>
+              <span class="badge rounded-pill badge-notification bg-success">11</span>
+            </div>
+            More
+          </a>
+        </li>
+      </ul>
+      <!-- Right links -->
+      <!-- Search form -->
+      <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0">
+        <input type="search" class="form-control" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-primary" type="button" data-mdb-ripple-color="dark">
+          Search
+        </button>
+      </form>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+<body>
+ <div id="wrapper">
+<h1 style="font-size: 550%; color: #acc8dd;">Webpage Title!</h1>
+  <h1>Table!</h1>
+  <table id="keywords" cellspacing="0" cellpadding="0">
+    <thead>
+      <tr style="font-size: 120%; height: 60px; ">
+        <th><span>Keywords</span></th>
+        <th><span>Impressions</span></th>
+        <th><span>Clicks</span></th>
+        <th><span>CTR</span></th>
+        <th><span>Rank</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background: #ebf3fa">
+        <td class="lalign" style="text-align: center">tshirts</td>
+        <td>6,000</td>
+        <td>110</td>
+        <td>1.8%</td>
+        <td>22.2</td>
+      </tr>
+      <tr style="background: #d7e7f4">
+        <td class="lalign" style="text-align: center">workspace photos</td>
+        <td>2,200</td>
+        <td>500</td>
+        <td>22%</td>
+        <td>8.9</td>
+      </tr>
+      <tr style="background: #ebf3fa">
+        <td class="lalign" style="text-align: center">development quotes</td>
+        <td>13,500</td>
+        <td>900</td>
+        <td>6.7%</td>
+        <td>12.0</td>
+      </tr>
+      <tr style="background: #d7e7f4">
+        <td class="lalign" style="text-align: center">popular web series</td>
+        <td>8,700</td>
+        <td>350</td>
+        <td>4%</td>
+        <td>7.0</td>
+      </tr>
+      <tr style="background: #ebf3fa">
+        <td class="lalign" style="text-align: center">2013 webapps</td>
+        <td>9,900</td>
+        <td>460</td>
+        <td>4.6%</td>
+        <td>11.5</td>
+      </tr>
+      <tr style="background: #d7e7f4">
+        <td class="lalign" style="text-align: center">ring bananaphone</td>
+        <td>10,500</td>
+        <td>748</td>
+        <td>7.1%</td>
+        <td>17.3</td>
+      </tr>
+    </tbody>
+  </table>
+ </div> 
+<div id="wrapper">
+  <h1>Form!</h1>
+  <table id="keywords" cellspacing="0" cellpadding="0">
+      <div class="register-photo">
+        <div class="form-container">
+            <div style="position: absolute;"><img src="https://media.istockphoto.com/id/1159565335/photo/smiling-young-woman-filling-application-form-or-writing-personal-information-in-contract.jpg?s=612x612&w=0&k=20&c=KUpN2efKkQlmy3E7sezyVh09OAThbXxS2V9um4P3tDY=" alt="Woman writing on paper." style="width: 400px; height: 400px; border-radius: 25px; position: relative; top: -43px;"/></div>
+            <form method="post">
+				
+                <h2 class="text-center" style="font-size: 180%"><strong>Create</strong> an account.</h2>
+                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+                <div class="form-group"><input class="form-control" type="password" name="password-repeat" placeholder="Password (repeat)"></div>
+                <div class="form-group">
+                    <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to the license terms.</label></div>
+                </div>
+                <div  class="form-group"><button class="btn btn-primary btn-block" type="submit">Sign Up</button></div><a href="#" class="already" style="font-size: 140%;">You already have an account? Login here.</a></form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  </table>
+ </div> 
+	
+</body>
+<style>@import url('https://fonts.googleapis.com/css?family=Amarante');
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html { overflow-y: scroll; }
+body { 
+  background: #eee url('https://i.imgur.com/eeQeRmk.png'); /* https://subtlepatterns.com/weave/ */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1;
+  color: #585858;
+  padding: 22px 10px;
+  padding-bottom: 55px;
+}
+::selection { background: #5f74a0; color: #fff; }
+::-moz-selection { background: #5f74a0; color: #fff; }
+::-webkit-selection { background: #5f74a0; color: #fff; }
+br { display: block; line-height: 1.6em; } 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+input, textarea { 
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; 
+}
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong, b { font-weight: bold; } 
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+h1 { 
+  font-family: 'Amarante', Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3.6em;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/** page structure **/
+#wrapper {
+  display: block;
+  width: 850px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 10px 17px;
+  -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
+}
+#keywords {
+  margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+#keywords thead {
+  cursor: pointer;
+  background: #acc8dd;
+}
+#keywords thead tr th { 
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;
+}
+#keywords thead tr th span { 
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+#keywords thead tr th.headerSortUp, #keywords thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+#keywords thead tr th.headerSortUp span {
+  background-image: url('https://i.imgur.com/SP99ZPJ.png');
+}
+#keywords thead tr th.headerSortDown span {
+  background-image: url('https://i.imgur.com/RkA9MBo.png');
+}
+#keywords tbody tr { 
+  color: #555;
+}
+#keywords tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+#keywords tbody tr td.lalign {
+  text-align: left;
+}
+.register-photo {
+  background:#f1f7fc;
+  padding:80px 0;
+}
+.register-photo .image-holder {
+  display:table-cell;
+  width:auto;
+  background:url(../../assets/img/meeting.jpg);
+  background-size:cover;
+}
+.register-photo .form-container {
+  display:table;
+  max-width:900px;
+  width:90%;
+  margin:0 auto;
+  box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+}
+.register-photo form {
+  display:table-cell;
+  width:400px;
+  background-color:#ffffff;
+  padding:40px 60px;
+  color:#505e6c;
+}
+@media (max-width:991px) {
+  .register-photo form {
+    padding:40px;
+  }
+}
+.register-photo form h2 {
+  font-size:24px;
+  line-height:1.5;
+  margin-bottom:30px;
+}
+.register-photo form .form-control {
+  background:#f7f9fc;
+  border:none;
+  border-bottom:1px solid #dfe7f1;
+  border-radius:0;
+  box-shadow:none;
+  outline:none;
+  color:inherit;
+  text-indent:6px;
+  height:40px;
+}
+.register-photo form .form-check {
+  font-size:13px;
+  line-height:20px;
+}
+.register-photo form .btn-primary {
+  background:#f4476b;
+  border:none;
+  border-radius:4px;
+  padding:11px;
+  box-shadow:none;
+  margin-top:35px;
+  text-shadow:none;
+  outline:none !important;
+}
+.register-photo form .btn-primary:hover, .register-photo form .btn-primary:active {
+  background:#eb3b60;
+}
+
+.register-photo form .btn-primary:active {
+  transform:translateY(1px);
+}
+.register-photo form .already {
+  display:block;
+  text-align:center;
+  font-size:12px;
+  color:#6f7a85;
+  opacity:0.9;
+  text-decoration:none;
+}
+	
+.btn {
+  padding: .55rem 1.5rem .45rem;
+}
+	
+a:hover {
+  background-color: #818c98;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+</style>
+</html>
