@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>home page</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="header">
+	<h1 style="text-transform:capitalize;">The Kent State Zoo</h1>
+</div>
+<div id="menu">
+	<ul>
+		<li><a href="index.html" style="font-size: 11pt">home</a></li>
+		<li><a href="aboutus.html" style="font-size: 11pt">about us</a></li>
+		<li><a href="events.html" style="font-size: 11pt">events</a></li>
+		<li><a href="photogallery.html" style="font-size: 11pt">photo gallery</a></li>
+		<li><a href="support.html" style="font-size: 11pt">support</a></li>
+	</ul>
+</div>
+<div id="page">
+	<div id="content"><div class="inner_copy"></div>
+		<div class="post">
+			<h1 class="title" style="text-transform:capitalize;">Welcome!</h1>
+			<div class="entry" style="font-size:11pt">
+				<p>At the Kent Zoo you'll come nose-to-nose with more than 1,000 animals from around the world, such as tigers, snow leopards, red pandas, penguins, Komodo dragons and so many more!</p>
+			</div>
+			<p class="meta"><a href="https://www.facebook.com/" class="more">Read More</a> &nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/" class="comments">Comments (33)</a></p>
+		</div>
+		<div class="post">
+			<h2 class="title" style="text-transform:capitalize; font-size: 20pt">Visit our upcoming events</h2>
+			<p class="byline"><small>Posted on July 11th, 2023 by <a href="https://github.com/Alex-Malinajdovski">Alex Malinajdovski</a></small></p>
+			<div class="entry">
+				    <table id="game-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Platforms</th>
+                <th>Developer</th>
+                <th>Players</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+			</div>
+			<p class="meta"><a href="https://www.facebook.com/" class="more">Read More</a> &nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/" class="comments">Comments (33)</a></p>
+		</div>
+	</div>
+	<div id="sidebar">
+		<ul>
+			<li>
+				<h2 style="text-transform:capitalize;" >See our Wildlife</h2>
+				<ul>
+					<li><a href="giraffes.html">Giraffes</a></li>
+					<li><a href="elephants.html">Elephants</a></li>
+					<li><a href="lions.html">Lions</a></li>
+					<li><a href="pandas.html">Pandas</a></li>
+					<li><a href="monkeys.html">Monkeys</a></li>
+					<li><a href="penguins.html">Penguins</a></li>
+				</ul>
+			</li>
+			<li>
+				<h2 style="text-transform:capitalize;" >contact us</h2>
+				<ul>
+					<li><a href="https://mail.google.com/">ZooInKent@gmail.com</a></li>
+					<li><a href="tel:3308494297">(330-849-4297)</a></li>
+					<li><a href="https://www.google.com/maps/place/Kent+State+University/@41.1497985,-81.3458908,17z/data=!3m1!4b1!4m6!3m5!1s0x88313adaaeda6679:0xddd9f3901cbcc433!8m2!3d41.1497945!4d-81.3433159!16zL20vMDRiZmc?entry=ttu">800 E Summit St, Kent, OH 44240</a></li>
+					<li><a href="aboutus.html">Our Hours: 8 a.m. - 7 p.m</a></li>
+					<li><a href="aboutus.html">Open Mon. - Fri. - closed on weekends currently</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+<div style="clear:both;height:30px">&nbsp;</div>
+<div><img style = "position:absolute; left:30px; top:250px; border-radius: 10%" src="https://www.oregonzoo.org/sites/default/files/styles/article-full/public/2017/07/21/H_giraffe.jpg?itok=F7-BeNBV" alt="Giraffe" width="430"></div>
+<div><img style = "position:relative; left:1380px; bottom:340px; border-radius: 10%" src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/72B3ANGSIVKMZM4BT4PL3NSG6Y.jpg" alt="Giraffe" width="430"></div>
+<div id="footer">
+</div>
+    <script>
+        fetch('https://raw.githubusercontent.com/Alex-Malinajdovski/CloudComputing-CIS-24165/main/Assignment%208%20-%20External%20Data/most_popular_video_games.json')
+    		.then(response => response.json())
+			.then(data => {
+                const gameTable = document.getElementById('game-table');
+                const tbody = gameTable.querySelector('tbody');
+                data.most_popular_video_games.forEach(game => {
+                    const row = document.createElement('tr');
+                    const titleCell = document.createElement('td');
+                    titleCell.textContent = game.title;
+                    row.appendChild(titleCell);
+                    const genreCell = document.createElement('td');
+                    genreCell.textContent = game.genre;
+                    row.appendChild(genreCell);
+                    const platformsCell = document.createElement('td');
+                    platformsCell.textContent = game.platforms.join(', ');
+                    row.appendChild(platformsCell);
+                    const developerCell = document.createElement('td');
+                    developerCell.textContent = game.developer;
+                    row.appendChild(developerCell);
+                    const playersCell = document.createElement('td');
+                    playersCell.textContent = game.players;
+                    row.appendChild(playersCell);
+                    tbody.appendChild(row);
+                });
+            });
+    </script>
+</body>
+</html>

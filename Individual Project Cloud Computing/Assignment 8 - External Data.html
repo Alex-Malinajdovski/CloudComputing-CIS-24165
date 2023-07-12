@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>Assignment 8 - External Data</title>
+    <style>
+        table {
+            border-collapse: collapse;}
+        th, td {
+            background: linear-gradient(to right, #2980b9, #ffffff);
+    		border-radius: 10px;
+    		border: none;
+    		box-shadow: 0 0 0 5px rgba(0,0,0,0.05),0 0 0 10px rgba(0,0,0,0.05);
+		    padding: 20px 15px;
+    		border-radius: 10px 10px 0 0;
+    		margin: 0;}
+    </style>
+</head>
+<body>
+	<p>These are the most popular games of 2023!</p>
+    <table id="game-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Platforms</th>
+                <th>Developer</th>
+                <th>Players</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+<p>I play league of legends the most</p>
+    <script>
+        fetch('https://raw.githubusercontent.com/Alex-Malinajdovski/CloudComputing-CIS-24165/main/Assignment%208%20-%20External%20Data/most_popular_video_games.json')
+    		.then(response => response.json())
+			.then(data => {
+                const gameTable = document.getElementById('game-table');
+                const tbody = gameTable.querySelector('tbody');
+                data.most_popular_video_games.forEach(game => {
+                    const row = document.createElement('tr');
+                    const titleCell = document.createElement('td');
+                    titleCell.textContent = game.title;
+                    row.appendChild(titleCell);
+                    const genreCell = document.createElement('td');
+                    genreCell.textContent = game.genre;
+                    row.appendChild(genreCell);
+                    const platformsCell = document.createElement('td');
+                    platformsCell.textContent = game.platforms.join(', ');
+                    row.appendChild(platformsCell);
+                    const developerCell = document.createElement('td');
+                    developerCell.textContent = game.developer;
+                    row.appendChild(developerCell);
+                    const playersCell = document.createElement('td');
+                    playersCell.textContent = game.players;
+                    row.appendChild(playersCell);
+                    tbody.appendChild(row);
+                });
+            });
+    </script>
+</body>
+</html>

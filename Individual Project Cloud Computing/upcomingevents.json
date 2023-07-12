@@ -1,0 +1,39 @@
+{
+  "upcomingevents": [
+    {
+      "title": "Fortnite",
+      "genre": "Battle Royale",
+      "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch"],
+      "developer": "Epic Games",
+      "players": "100 million+"
+    },
+    {
+      "title": "Apex Legends",
+      "genre": "Battle Royale",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "developer": "Respawn Entertainment",
+      "players": "50 million+"
+    },
+    {
+      "title": "Minecraft",
+      "genre": "Sandbox",
+      "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch", "Mobile"],
+      "developer": "Mojang Studios",
+      "players": "200 million+"
+    },
+    {
+      "title": "Call of Duty: Warzone",
+      "genre": "Battle Royale",
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "developer": "Infinity Ward, Raven Software",
+      "players": "75 million+"
+    },
+    {
+      "title": "League of Legends",
+      "genre": "MOBA",
+      "platforms": ["PC"],
+      "developer": "Riot Games",
+      "players": "115 million+"
+    }
+  ]
+}
