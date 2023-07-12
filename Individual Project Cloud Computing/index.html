@@ -81,12 +81,12 @@
 <div id="footer">
 </div>
     <script>
-        fetch('https://raw.githubusercontent.com/Alex-Malinajdovski/CloudComputing-CIS-24165/main/Individual%20Project%20Cloud%20Computing/upcomingevents.json')
+        fetch('https://raw.githubusercontent.com/Alex-Malinajdovski/CloudComputing-CIS-24165/main/Assignment%208%20-%20External%20Data/most_popular_video_games.json')
     		.then(response => response.json())
 			.then(data => {
-                const upcomingevents = document.getElementById('upcomingevents');
-                const tbody = upcomingevents.querySelector('tbody');
-                data.upcomingevents.forEach(game => {
+                const gameTable = document.getElementById('game-table');
+                const tbody = gameTable.querySelector('tbody');
+                data.most_popular_video_games.forEach(game => {
                     const row = document.createElement('tr');
                     const titleCell = document.createElement('td');
                     titleCell.textContent = game.title;
