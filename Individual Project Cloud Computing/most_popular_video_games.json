@@ -1,8 +1,8 @@
 {
   "most_popular_video_games": [
     {
-      "title": "July",
-      "genre": "oyale",
+      "title": "Fortnite",
+      "genre": "Battle Royale",
       "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch"],
       "developer": "Epic Games",
       "players": "100 million+"
