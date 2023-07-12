@@ -182,7 +182,7 @@ function showSlides() {
         <tbody></tbody>
     </table>
 <script>
-        fetch('events.json')
+        fetch('https://raw.githubusercontent.com/Alex-Malinajdovski/CloudComputing-CIS-24165/main/Individual%20Project%20Cloud%20Computing/events.json')
             .then(response => response.json())
             .then(data => {
                 const eventTable = document.getElementById('event-table');
