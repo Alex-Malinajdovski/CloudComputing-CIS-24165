@@ -78,10 +78,15 @@
 <div style="clear:both;height:30px">&nbsp;</div>
 <div><img style = "position:absolute; left:30px; top:250px; border-radius: 10%" src="https://www.oregonzoo.org/sites/default/files/styles/article-full/public/2017/07/21/H_giraffe.jpg?itok=F7-BeNBV" alt="Giraffe" width="430"></div>
 <div><img style = "position:relative; left:1380px; bottom:340px; border-radius: 10%" src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/72B3ANGSIVKMZM4BT4PL3NSG6Y.jpg" alt="Giraffe" width="430"></div>
+<div><video width="320" height="240" autoplay>
+  <source src="elephantparty.mp4" type="video/mp4">
+  <source src="elephantparty.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video></div>
 <div id="footer">
 </div>
     <script>
-        fetch('https://raw.githubusercontent.com/Alex-Malinajdovski/CloudComputing-CIS-24165/main/Assignment%208%20-%20External%20Data/most_popular_video_games.json')
+        fetch('https://raw.githubusercontent.com/Alex-Malinajdovski/CloudComputing-CIS-24165/main/Individual%20Project%20Cloud%20Computing/most_popular_video_games.json')
     		.then(response => response.json())
 			.then(data => {
                 const gameTable = document.getElementById('game-table');
