@@ -1,0 +1,44 @@
+{
+  "events": [
+    {
+      "title": "Wildlife Safari",
+      "date": "2023-07-15",
+      "time": "10:00 AM",
+      "location": "Kent Zoo",
+      "description": "Embark on an exciting wildlife safari and observe various exotic animals up close. Join our knowledgeable guides for a memorable adventure!",
+      "participants": 50
+    },
+    {
+      "title": "Penguin Encounter",
+      "date": "2023-07-20",
+      "time": "2:00 PM",
+      "location": "Kent Zoo",
+      "description": "Get up close and personal with adorable penguins in this interactive encounter. Learn about their habits, feed them, and enjoy their playful antics!",
+      "participants": 25
+    },
+    {
+      "title": "Jungle Night",
+      "date": "2023-07-25",
+      "time": "6:30 PM",
+      "location": "Kent Zoo",
+      "description": "Experience the magic of the jungle after dark. Explore the zoo at night, guided by torchlight, and witness nocturnal animals in their natural habitat.",
+      "participants": 40
+    },
+    {
+      "title": "Zoo Photography Workshop",
+      "date": "2023-08-05",
+      "time": "9:00 AM",
+      "location": "Kent Zoo",
+      "description": "Enhance your photography skills in this hands-on workshop. Capture stunning shots of the zoo's diverse animals under the guidance of professional photographers.",
+      "participants": 15
+    },
+    {
+      "title": "Sloth Appreciation Day",
+      "date": "2023-08-10",
+      "time": "11:00 AM",
+      "location": "Kent Zoo",
+      "description": "Celebrate the charm of sloths with a day dedicated to these lovable creatures. Enjoy sloth-themed activities, learn fascinating facts, and meet sloths up close!",
+      "participants": 30
+    }
+  ]
+}

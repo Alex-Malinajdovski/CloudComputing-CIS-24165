@@ -72,6 +72,15 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 </style>
+	<style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
 <div id="header">
@@ -159,18 +168,57 @@ function showSlides() {
 			<h2 class="title" style="text-transform:capitalize; font-size: 20pt">Visit our upcoming events</h2>
 			<p class="byline"><small>Posted on July 11th, 2023 by <a href="https://github.com/Alex-Malinajdovski">Alex Malinajdovski</a></small></p><br>
 			<div class="entry">
-				    <table id="game-table">
+				    <table id="event-table">
         <thead>
             <tr>
                 <th>Title</th>
-                <th>Genre</th>
-                <th>Platforms</th>
-                <th>Developer</th>
-                <th>Players</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th>Description</th>
+                <th>Participants</th>
             </tr>
         </thead>
         <tbody></tbody>
     </table>
+<script>
+        fetch('events.json')
+            .then(response => response.json())
+            .then(data => {
+                const eventTable = document.getElementById('event-table');
+                const tbody = eventTable.querySelector('tbody');
+
+                data.events.forEach(event => {
+                    const row = document.createElement('tr');
+
+                    const titleCell = document.createElement('td');
+                    titleCell.textContent = event.title;
+                    row.appendChild(titleCell);
+
+                    const dateCell = document.createElement('td');
+                    dateCell.textContent = event.date;
+                    row.appendChild(dateCell);
+
+                    const timeCell = document.createElement('td');
+                    timeCell.textContent = event.time;
+                    row.appendChild(timeCell);
+
+                    const locationCell = document.createElement('td');
+                    locationCell.textContent = event.location;
+                    row.appendChild(locationCell);
+
+                    const descriptionCell = document.createElement('td');
+                    descriptionCell.textContent = event.description;
+                    row.appendChild(descriptionCell);
+
+                    const participantsCell = document.createElement('td');
+                    participantsCell.textContent = event.participants;
+                    row.appendChild(participantsCell);
+
+                    tbody.appendChild(row);
+                });
+            });
+    </script>
 			</div>
 			<p class="meta"><a href="https://www.facebook.com/" class="more">Read More</a> &nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/" class="comments">Comments (33)</a></p>
 		</div>
@@ -209,32 +257,6 @@ function showSlides() {
 </iframe></div>
 <div id="footer">
 </div>
-    <script>
-        fetch('https://raw.githubusercontent.com/Alex-Malinajdovski/CloudComputing-CIS-24165/main/Individual%20Project%20Cloud%20Computing/most_popular_video_games.json')
-    		.then(response => response.json())
-			.then(data => {
-                const gameTable = document.getElementById('game-table');
-                const tbody = gameTable.querySelector('tbody');
-                data.most_popular_video_games.forEach(game => {
-                    const row = document.createElement('tr');
-                    const titleCell = document.createElement('td');
-                    titleCell.textContent = game.title;
-                    row.appendChild(titleCell);
-                    const genreCell = document.createElement('td');
-                    genreCell.textContent = game.genre;
-                    row.appendChild(genreCell);
-                    const platformsCell = document.createElement('td');
-                    platformsCell.textContent = game.platforms.join(', ');
-                    row.appendChild(platformsCell);
-                    const developerCell = document.createElement('td');
-                    developerCell.textContent = game.developer;
-                    row.appendChild(developerCell);
-                    const playersCell = document.createElement('td');
-                    playersCell.textContent = game.players;
-                    row.appendChild(playersCell);
-                    tbody.appendChild(row);
-                });
-            });
-    </script>
+ 
 </body>
 </html>
