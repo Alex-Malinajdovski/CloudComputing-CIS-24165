@@ -6,7 +6,67 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=512&id=VbxKFvBFUSfq&format=png">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+	<style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
 <div id="header">
@@ -22,14 +82,13 @@
 	</ul>
 </div>
 <div id="page">
-	<div id="content"><div class="inner_copy"></div>
+	<div id="content" style="width:500px"><div class="inner_copy"></div>
 		<div class="post">
-			<h1 class="title" style="text-transform:capitalize;">giraffes</h1>
+			<h1 class="title" style="text-transform:capitalize;">Pandas</h1>
 			<p class="byline"><small>Posted on July 11th, 2023 by <a href="https://github.com/Alex-Malinajdovski">Alex Malinajdosvki</a></small></p>
-			<div class="entry">
-				<p><img src="https://cdn.sci.news/images/2016/05/image_3872-Masai-Giraffe.jpg" alt="Giraffe" width="480"></p>
-			</div>
-			<p class="meta"><a href="https://www.facebook.com/" class="more">Read More</a> &nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/" class="comments">Comments (33)</a></p>
+			<img style = "position:relative; left:8%; top:15px; " src="https://www.oregonzoo.org/sites/default/files/styles/article-full/public/2017/07/21/H_giraffe.jpg?itok=F7-BeNBV" alt="Giraffe" width="430">
+			<img style = "position:relative; left:8%; top:25px; " src="https://www.oregonzoo.org/sites/default/files/styles/article-full/public/2017/07/21/H_giraffe.jpg?itok=F7-BeNBV" alt="Giraffe" width="430">
+			<img style = "position:relative; left:8%; top:35px; " src="https://www.oregonzoo.org/sites/default/files/styles/article-full/public/2017/07/21/H_giraffe.jpg?itok=F7-BeNBV" alt="Giraffe" width="430">
 		</div>
 	</div>
 	<div id="sidebar">
@@ -45,6 +104,7 @@
 					<li><a href="penguins.html">Penguins</a></li>
 				</ul>
 			</li>
+			<br><br><br>
 			<li>
 				<h2 style="text-transform:capitalize;" >contact us</h2>
 				<ul>
@@ -58,7 +118,7 @@
 		</ul>
 	</div>
 </div>
-<div style="clear:both;height:30px"></div>
+<div style="clear:both;height:30px">&nbsp;</div>
 <div id="footer">
 </div>
 </body>
